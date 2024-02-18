@@ -85,21 +85,29 @@ This is a challenging task that requires the architect to have `some level of bu
   - `Avoid the Bottleneck Trap`:
     
     delegate writing critical code to developers, and focus on software architecture.
+
+    - ### โฟกัสงานหลัก
     
   - `Proof-of-Concepts (POCs)`:
     
     try out different solutions to see which one is the best
+
+    - ### ทดลองหาวิธีการใหม่ ๆ
     
   - `Tackling Technical Debt`:
     
     fix small issues (technical debt) in the codebase, keeping things running smoothly.
+
+    - ### ไม่มักง่ายในการเขียนโค้ด (คิดถึงปัญหาในอนาคตเสมอ)
     
   - `Bug Fixes`:
     
     fixing bugs makes understanding where the weaknesses are in the codebase and how to improve them.
+
+    - ### แก้บัค หาข้อด้อยในโค้ด (เขียนให้ดูเป็นตัวอย่าง ทำโค้ดรีวิว)
     
   - `Automation`:
     
     creating command-line tools and analyzers for day-to-day tasks, or using fitness functions.
 
-### ⚖️ โฟกัสงานหลัก, ทดลองหาวิธีการใหม่ ๆ, ไม่มักง่ายในการเขียนโค้ด คิดถึงปัญหาในอนาคตเสมอ / แก้บัค หาข้อด้อยในโค้ด และหาวิธีแก้ (เขียนให้ดูเป็นตัวอย่าง ทำโค้ดรีวิว), ใช้เครื่องมือช่วยเหลือ (automation tools)
+    - ### ใช้เครื่องมือช่วยเหลือ
