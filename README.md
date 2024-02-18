@@ -52,7 +52,7 @@ The architect must navigate the politics of the company and `apply basic negotia
 - ### Architecture Versus Design
 The architect and developer must be on the same virtual team to make this work.
 
-[image placeholder]
+![Architecture Versus Design](images/arch-vs-design.png)
 
 An architect is responsible for things like `analyzing business requirements to extract and define the architectural characteristics` (“-ilities”), `selecting which architecture patterns and styles would fit the problem domain`, and `creating components` (the building blocks of the system). _The artifacts created from these activities are then handed off to the development team_, which is responsible for `creating class diagrams for each component`, `creating user interface screens`, and `developing and testing source code`.
 
@@ -61,7 +61,7 @@ An architect is responsible for things like `analyzing business requirements to 
 - ### Technical Breadth
 A software architect must `have a significant amount of technical breadth` to think like an architect and see things with an architecture point of view.
 
-[image placeholder]
+![Technical Breadth](images/knowledge-pyramid.png)
 
 Architects also need to balance their knowledge. They shouldn't spread themselves too thin trying to learn everything, but they also shouldn't focus too narrowly on just one thing. Finding the right balance between `knowing a lot about a few things (depth)` and `knowing a little about many things (breadth)` is important for their career growth.
 
@@ -70,7 +70,7 @@ Architects also need to balance their knowledge. They shouldn't spread themselve
 - ### Analyzing Trade-Offs
 Thinking like an architect is all about seeing trade-offs in every solution, technical or otherwise, and analyzing those trade-offs to determine what is the best solution. `There are no right or wrong answers` in architecture—only trade-offs.
 
-[image placeholder]
+![Analyzing Trade-Offs](images/topic-pros-cons.png)
 
 Thinking like an architect is analyzing these trade-offs, then asking “`which is more important`: extensibility or security?” The decision between different solutions will always `depend on the business drivers, environment, and a host of other factors`.
 
