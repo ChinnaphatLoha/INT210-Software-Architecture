@@ -120,7 +120,7 @@ The first key to effectiveness and success in the software architect role depend
 ## Measuring Modularity
 
 - ### Cohesion
-  It is a measure of `how related the parts are to one another`
+  > It is a measure of how related the parts are to one another.
 
   ### A range of cohesion measures from best to worst (some examples):
 
@@ -148,3 +148,64 @@ The first key to effectiveness and success in the software architect role depend
 
       ### จำนวนของกลุ่มเมธอดที่ไม่ได้เรียกใช้แอตทริบิวต์ตัวเดียวกัน (dissimilar - similar)
       ### ยิ่งความสัมพันธ์มาก ค่า LCOM ยิ่งตํ่า นับว่าดี
+
+- ### Coupling
+  - ### Afferent coupling:
+    number of `incoming connections` to a code artifact (component, class, function, etc.)
+  
+  - ### Efferent coupling:
+    number of `outgoing connections` to other code artifacts
+
+  #### `จำไว้ว่า ควรถูกเรียกใช้ > ใช้ส่วนอื่น`
+
+  - ### Abstractness (วัดความชัดเจน)
+    the ratio of abstract to concrete artifacts
+
+    #### too many abstractions, makes it difficult to understand how things wire together
+
+    #### ยิ่งไม่ชัดเจน ยิ่งยากจะเข้าใจความสัมพันธ์
+
+  - ### Instability (วัดความมั่นคง)
+    the ratio of outgoing to all coupling
+
+    #### high volatility breaks more easily
+
+    #### พึ่งพามากเกินไป ทำให้พังง่ายกว่าเดิม
+
+  - ### Distance from the Main Sequence
+    relationship between abstractedness and instability
+
+    #### หาตรงกลางระหว่างความชัดเจนและความมั่นคง
+
+- ### Connascence
+  > Two components are connascent if a change in one would require the other to be modified in order to maintain the overall correctness of the system.
+
+  ### ความยึดติดกันระหว่าง component (ฉันเปลี่ยน เธอต้องเปลี่ยน)
+  - ### Static Connascence
+
+    - **Connascence of Name (CoN)**: เปลี่ยนชื่อ
+
+    - **Connascence of Type (CoT)**: เปลี่ยนเดต้าไทป์
+
+    - **Connascence of Meaning/Convention (CoM/C)**: เปลี่ยนกฎที่คนส่วนใหญ่ยึดตาม
+
+    - **Connascence of Position (CoP)**: เปลี่ยนลำดับพารามิเตอร์
+
+    - **Connascence of Algorithm (CoA)**: เปลี่ยนขั้นตอนวิธีการทำงานของโค้ด
+
+  - ### Dynamic Connascence - runtime coupling
+
+    - **Connascence of Execution (CoE)**: เปลี่ยนลำดับคำสั่ง
+
+    - **Connascence of Timing (CoT)**: เปลี่ยนเวลาในการทำงาน เช่น race condition, asynchronus
+
+    - **Connascence of Values (CoV)**:
+    เปลี่ยนค่าไม่ครบทุกส่วนที่ระบบต้องการ
+
+    - **Connascence of Identity (CoI)**:
+    เปลี่ยนการอ้างถึงออบเจ็กต์ไม่ครบทุกส่วนที่ระบบต้องการ
+
+- ### Connascence Properties
+  - **Strength**: ทำให้ง่ายต่อการ refactor code
+  - **Locality**: ระยะห่างของ connascence ที่เกิดขึ้นระหว่าง component มีผลต่อความเสียหายของระบบ
+  - **Degree**: ยิ่งมี connascence ที่มากหรือสูง โอกาสเกิดความเสียหายก็เพิ่มตาม
