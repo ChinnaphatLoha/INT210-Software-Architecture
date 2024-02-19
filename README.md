@@ -1,3 +1,30 @@
+# Architecture Decisions
+### Architecture decisions define the rules for `how a system should be constructed`.
+
+Architecture decisions form `the constraints of the system` and direct the development teams on
+`what is and what isn’t allowed`.
+
+### 📏 วิธีการต่าง ๆ ในการสร้างระบบที่ผ่านการตัดสินใจ และสามารถบอกได้ว่าอะไรทำได้หรืออะไรทำไม่ได้
+
+### Should use tools to help verify if someone breaks rules
+
+### 🔍 ควรเครื่องมือตรวจสอบการทำงานว่าเป็นไปตามข้อกำหนด
+
+---
+
+# Design Principles
+### Design principles are `guidelines for constructing systems`.
+
+### เป็นหลักการหรือข้อแนะนำสำหรับการวางโครงสร้างระบบ
+
+An exception to a particular `architecture decision is analyzed` by the ARB (or chief architect if no ARB exists) and is either approved or denied `based on justifications and trade-offs`.
+
+### `Variance` can be defined to break the rule sometime
+
+### 🚨 ถ้าวิเคราะห์แล้วพบว่ามีจุดที่ทำให้ต้องไม่ปฏิบัติตามข้อกำหนด (Variance) ก็ต้องมองหาสิ่งอื่นที่เหมาะสม (Design Principles)
+
+---
+
 # Expectations of an Architect
 ### roles and responsibilities of architects
 The first key to effectiveness and success in the software architect role depends on understanding and practicing each of these expectations.
